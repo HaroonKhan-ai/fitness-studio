@@ -1,0 +1,19 @@
+.contactContainer{
+     width: 100%;
+  min-height: calc(100vh - 58px);
+
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  font-family: sans-serif;
+  color: rgb(106, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts img{
+    cursor: pointer;
+}

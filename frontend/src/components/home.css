@@ -1,0 +1,38 @@
+.home-container {
+  width: 100%;
+  min-height: calc(100vh - 58px);
+
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/hulk.png");
+  background-size: 100% 100%;
+
+  background-position: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  font-size: 1.5rem;
+  text-align: center;
+  
+  
+}
+@media screen and(max-width:756px){
+  .home-container{
+    
+    justify-content: center;
+  }
+  .hero-text{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,46 @@
+.products-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: grid;
+  /* Automatically wraps or centers cards instead of forcing a rigid 5-column stretch */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px; /* Limits width so it doesn't span infinitely */
+  margin: 0 auto; /* Centers the entire container box */
+  justify-content: center; /* Centers the actual cards inside the container */
+}
+
+.card {
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card button {
+  margin-top: auto; /* Keeps the buttons aligned perfectly along the grid row */
+  padding: 8px 16px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}

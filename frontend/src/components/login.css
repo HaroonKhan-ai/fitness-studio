@@ -1,0 +1,120 @@
+
+.login-container {
+  max-width: 420px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.login-container h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #333333;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #007bff; /* Matches standard clean blue themes */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.15);
+}
+
+
+.error-msg {
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+
+button[type="submit"] {
+  width: 100%;
+  padding: 13px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+
+.loginData {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #f1f3f5;
+  border-left: 4px solid #28a745; /* Clean green accent */
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 13px;
+  color: #333;
+  word-break: break-all;
+}
+
+.loginData:empty {
+  display: none;
+}
+
+.loginData div {
+  margin-bottom: 5px;
+}
+
+.loginData div::before {
+  font-weight: bold;
+  color: #666;
+}
+
+.loginData .email::before {
+  content: "Email: ";
+}
+
+.loginData .password::before {
+  content: "Password: ";
+}

@@ -1,0 +1,62 @@
+nav {
+  width: 100%; 
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  background: transparent;
+  padding: 15px 20px; 
+  box-sizing: border-box;
+  background: linear-gradient(to right, rgb(80, 130, 238), rgb(4, 240, 244));
+}
+
+.logo {
+  font-style: italic;
+  font-size: 24px; 
+  font-weight: bold;
+  color: white;
+}
+
+ul {
+  display: flex;
+  align-items: center; 
+  gap: 24px; 
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li .cartbtn{
+  border: 5px solid rgb(5, 246, 5);
+  padding: 3px;
+  border-radius: 4px;
+  font-weight: bolder;
+  color: navy;
+}
+
+li a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white; 
+  transition: color 0.2s ease; 
+}
+
+li a:hover {
+  color: rgb(108, 108, 255);
+}
+
+@media screen and (max-width:756px){
+  nav{
+    flex-direction: column;
+     justify-content: center;
+     gap: 12px;
+  }
+  ul{
+    flex-direction: column;
+  }
+}
