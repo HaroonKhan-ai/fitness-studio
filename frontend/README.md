@@ -1,16 +1,17 @@
-# React + Vite
+# Full-Featured Fitness E-Commerce Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, highly responsive frontend e-commerce application built using **React** and styled with optimized, custom fluid **CSS layouts**. This project serves as an entry-level portfolio piece demonstrating state management, responsive grid/flexbox controls, and client-side route protection.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Persistent Shopping Cart:** Built an increment/decrement state engine where cart memory survives browser refreshes using structural synchronization with `localStorage`.
+- **Client-Side Route Guarding:** Implemented a custom protected route structure that checks active login credentials against mock registration keys before unlocking product access.
+- **Modern Form Validation:** Leveraged `React Hook Form` to manage field states, handle input constraints, and process dynamic runtime error messages smoothly.
+- **Locked-Viewport Layout:** Optimized layout containers using CSS math variables (`calc(100vh - 59px)`) to keep scrolling enclosed inside elements and prevent global page shifting.
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend Framework:** React (Vite)
+- **Routing:** React Router DOM v6
+- **Form Utility:** React Hook Form
+- **Styling:** Custom Vanilla CSS3 (Flexbox, Grid)
