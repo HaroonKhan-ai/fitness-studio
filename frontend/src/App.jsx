@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import Products from "./components/Products";
 import Cart from "./components/Cart";
 import { useState, useEffect } from "react";
@@ -56,7 +57,7 @@ const App = () => {
     );
   }
   return (
-    <div>
+    <div className="parentContainer">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
