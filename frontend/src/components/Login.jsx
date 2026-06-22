@@ -55,7 +55,7 @@ const Login = () => {
 
         <div className="input-group">
           <label>
-            Password:
+            Password:</label>
             <input
               type="password"
               placeholder="Password"
@@ -67,7 +67,7 @@ const Login = () => {
                 },
               })}
             />
-          </label>
+          
           {errors.password && (
             <span className="error-msg">{errors.password.message}</span>
           )}
