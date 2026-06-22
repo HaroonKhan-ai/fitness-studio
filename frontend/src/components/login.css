@@ -1,5 +1,6 @@
 
 .login-container {
+  display:inline;
   margin: 60px auto;
   padding: 40px 30px;
   background-color: #ffffff;
@@ -35,7 +36,6 @@
 }
 
 .input-group input {
-  width: 100%;
   padding: 12px 14px;
   font-size: 15px;
   border: 1.5px solid #e0e0e0;
